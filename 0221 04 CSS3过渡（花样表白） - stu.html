@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>04 CSS3过渡（花样告白）</title>
+    <style>
+    	body{
+    		padding: 0;
+            margin: 0;
+    		background-color: #4993eb;
+    	}
+
+    	.heart{
+    		margin-top: 50px;
+    		margin-left: 350px;
+    	}
+
+        .heart:before,
+        .heart:after {
+        	position: absolute;
+            float: left;
+            width: 225px;
+            height: 330px;
+            text-align: center;
+            font-size: 35px;
+            color: #ffff24;
+            line-height: 120px;
+            background-color: #ff0582;
+            border-radius: 120px 120px 0 0;
+          }
+
+        .heart:before {
+           content: "某某某";
+           transform: translateX(-53px) rotate(-47deg);
+          }
+
+        .heart:after {
+           content: "喜欢你";
+           transform: translateX(30px) rotate(46deg);
+          }
+
+    	.item{
+    		position: relative;
+    		float: left;
+    		display:block;
+    		width: 234px;
+    		height: 300px;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.5s ;
+    		border: 0px solid;
+       		margin-top: 450px;
+    		margin-left: 125px;
+    		background-color: white;
+    	}
+
+    	.item:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 0 10px 10px #9932CC;
+        }
+
+    	.pic{
+    		width: 150px;
+    		height: 150px;
+    		margin-top: 25px;
+    		margin-bottom: 25px;
+    		margin-left: 40px;
+    	}
+
+
+    	.desc{
+    		position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: -100px;
+            font-size: 24px;
+            line-height:100px;
+            background-color: #ff6700;
+            color:white;
+            transition: all 0.5s;
+    	}
+
+    	.item:hover .desc{
+            bottom: 0px;
+        }
+
+        .box{
+        	position: absolute;
+        	top: 130px;
+        	right: 400px;
+        	width: 300px;
+        	height: 300px;
+        	border-radius: 50%;
+        	transform-style: preserve-3d;
+        	transform-origin: center center;
+        	transition: 1s;
+        	
+        }
+
+        .box:hover{
+        	transform: rotateY(180deg);
+
+        }
+
+        .box1{
+        	width: 100%;
+        	height: 100%;
+        	position: absolute;
+        	border-radius: 50%;
+        	backface-visibility: hidden;
+        	background: url(images/bg.png) 303px 301px;
+        }
+
+        .box2{
+        	width: 100%;
+        	height: 100%;
+        	border-radius: 50%;
+        	transform: rotateY(-180deg);
+        	backface-visibility: hidden;
+        	background: url(images/bg.png) 606px 301px;
+        }
+
+
+
+    </style>   
+</head>
+
+<body>
+    <div class="top">
+         <div class="heart"></div>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+    </div>
+   
+    <div class="items">
+        <div class="item">
+            <img src="./images/1.jpg" alt="">
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="./images/2.png" alt="">
+            </div>
+            <div class="desc">有句话悄悄说</div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="./images/3.png" alt="">
+            </div>
+            <div class="desc">你的样子最可爱</div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="./images/4.png" alt="">
+            </div>
+            <div class="desc">喜欢的就是你</div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="./images/5.png" alt="">
+            </div>
+            <div class="desc">期限是一万年</div>
+        </div>
+    </div>
+</body>
+
+</html>
