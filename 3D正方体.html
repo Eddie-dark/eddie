@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3d正方体</title>
+</head>
+<style>
+.box{
+		width:300px;
+		height:300px;
+		position: relative;
+		margin: 250px 800px;
+		transform-style: preserve-3d;
+		animation: zhuan 5s linear infinite;
+		
+	}
+
+	.box div{
+			width:300px;
+			height:300px;
+			position:absolute;
+			text-align: center;
+			line-height: 300px;
+			font-size: 60px;
+			color:yellow;
+			border: 1px solid black;
+
+		}
+
+.top{
+	
+	background-color:rgba(255,0,0,0.2);
+	transform: rotateX(-90deg)  translateY(-125px); 
+	transform-origin: top;
+		
+}
+
+.bottom{
+	
+	background-color:rgba(0,255,0,0.2);
+	transform: rotateX(-90deg) translateY(175px); 
+	transform-origin:bottom;
+
+}
+
+.left{
+	
+	background-color:rgba(255,0,0,0.2);
+	transform: rotateY(-90deg) translateX(-175px);
+	transform-origin:left;
+}
+
+.right{
+	
+	background-color:rgba(0,0,255,0.2);
+	transform: rotateY(-90deg) translateX(125px);
+	transform-origin:right;
+}
+
+.front{
+	
+	background-color:rgba(0,255,255,0.2);
+	transform:translateZ(-175px);
+
+
+	
+}
+
+.back{
+	
+	background-color:rgba(255,0,255,0.2);
+	transform:translateZ(125px);
+	
+}
+
+@keyframes zhuan{
+			0%{
+				transform: rotateX(0deg) rotateY(0deg);
+			}
+			100%{
+				transform: rotateX(360deg) rotateY(360deg);
+			}
+		}
+
+</style>
+<body>
+<div class="box">
+		<div class="top">上</div>
+		<div class="bottom">下</div>
+		<div class="left">左</div>
+		<div class="right">右</div>
+		<div class="front">前</div>
+		<div class="back">后</div>
+	</div>
+	
+</body>
+</html>
