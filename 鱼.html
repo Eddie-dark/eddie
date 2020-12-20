@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大鲨鱼</title>
+</head>
+<style>
+	body{
+		overflow: hidden;
+	}
+	.blueshark{
+			width: 515px;
+			height:270px;
+			background: url(images/shark1.png);
+			animation:shake1 2s infinite steps(8),swimshake1 10s infinite linear;
+  	}
+	.goldshark{
+			width: 515px;
+			height:270px;
+			background: url(images/shark2.png);
+			animation:shake2 2s infinite steps(8),swimshake2 10s infinite linear;
+	}
+	
+	.fish{
+			width: 175px;
+			height: 125px;
+			background: url(images/fish8.png);
+			animation:shake3 2s infinite steps(8), swimfish 5s infinite linear;
+		}
+
+
+	@keyframes shake1 {
+		0%{
+
+		}
+		100%{
+			background-position:left -2160px;
+		}
+	}
+
+	@keyframes shake2 {
+		0%{
+
+		}
+		100%{
+			background-position:left -2185px;
+		}
+	}
+
+	@keyframes shake3 {
+		0%{
+
+		}
+		100%{
+			background-position:left -1010px;
+		}
+	}
+
+	 @keyframes swimshake1{
+	 
+	 	25% {
+            transform: translate(1400px,0) rotate(0deg);
+        }
+        50% {
+            transform: translate(1400px,0) rotate(180deg);
+        }
+        75% {
+            transform: translate(0,0) rotate(180deg);
+        }
+    }
+
+    @keyframes swimshake2{
+	 	0%{
+	 		transform: translate(2000px,0) rotate(180deg);
+
+	 	}
+      
+       
+        100%{
+			transform: translate(-500px,0) rotate(180deg);
+
+        }
+    }
+	
+	@keyframes swimfish{
+	 	0%{
+	 		transform: translate(-300px,10px);
+
+	 	}
+	 	
+	 	
+        50% {
+            transform: translate(650px,150px) rotate(45deg);
+        }
+        
+        
+        100%{
+			transform: translate(1500px,300px) rotate(90deg);
+        }
+    }
+
+
+</style>
+<body>
+<div class="blueshark"></div>
+<div class="goldshark"></div>
+<div class="fish"></div>
+
+	
+</body>
+
+
+</html>
