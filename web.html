@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web全栈</title>
+</head>
+<style>
+body{
+	overflow: hidden;
+}
+.box{
+	width:800px;
+	height:800px;
+	position: relative;
+	left:50%;
+	top:50%;
+	margin-left:-400px;
+	margin-top:50px;
+}
+.wed{
+	position: absolute;
+	margin-left:-90px;
+    margin-top:-90px;
+	left:50%;
+	top:50%;
+	width: 150px;
+    height: 150px;
+    border-radius: 50%;
+   background-color:rgb(42,52,96);
+   text-align: center;
+   line-height: 150px;
+   font-size: 25px;
+   color:white;
+   border:30px solid rgba(230,232,236,0.9);
+
+}
+
+.jsandjq{
+	position: absolute;
+	width:350px;
+	height:350px;
+	margin-left:-162px;
+    margin-top:-162px;
+	left:50%;
+	top:50%;
+	 border-radius: 50%;
+	border:2px dashed black; 
+	animation: roll 5s linear infinite;
+}
+
+.jsandjq:before{
+	content: "node.js";
+	position: absolute;
+	margin-left:250px;
+	width:70px;
+	height:70px;
+	text-align:center;
+	line-height: 70px;
+	font-size: 15px;
+	color:white;
+	background-color: rgba(255,143,146,0.9);
+	border:10px solid rgba(255,253,252,0.6);
+	border-radius: 50%;
+	
+}
+.jsandjq:after{
+	content: "jQuery";
+	position: absolute;
+	margin-left:-35px;
+	margin-top:150px;
+	width:50px;
+	height:50px;
+	text-align:center;
+	line-height: 50px;
+	font-size: 15px;
+	color:white;
+	background-color: rgba(232,144,236,0.9);
+	border:10px solid rgba(255,253,252,0.6);
+	border-radius: 50%;
+	
+}
+
+.htmlandcss{
+	position: absolute;
+	width:500px;
+	height:500px;
+	margin-left:-237px;
+    margin-top:-237px;
+	left:50%;
+	top:50%;
+	 border-radius: 50%;
+	border:2px dashed black; 
+	animation: roll 5s linear infinite;
+}
+
+.htmlandcss:before{
+	content: "css3";
+	position: absolute;
+	margin-left:250px;
+	margin-top:460px;
+	width:50px;
+	height:50px;
+	text-align:center;
+	line-height: 50px;
+	font-size: 15px;
+	color:white;
+	background-color: rgba(191,239,202,0.9);
+	border:10px solid rgba(255,253,252,0.6);
+	border-radius: 50%;
+	
+
+}
+
+.htmlandcss:after{
+	content: "Html5";
+	position: absolute;
+	margin-left:150px;
+	margin-top:-45px;
+	width:80px;
+	height:80px;
+	text-align:center;
+	line-height: 80px;
+	font-size: 15px;
+	color:white;
+	background-color: rgba(157,251,253,0.9);
+	border:10px solid rgba(255,253,252,0.6);
+	border-radius: 50%;
+	
+
+}
+
+.five{
+	position: absolute;
+	width:650px;
+	height:650px;
+	margin-left:-312px;
+    margin-top:-312px;
+	left:50%;
+	top:50%;
+	 border-radius: 50%;
+	border:2px dashed black;
+	animation: roll 5s linear infinite;
+}
+
+.five:before{
+	content: "Canvas";
+	position: absolute;
+	margin-left:500px;
+	margin-top:520px;
+	width:70px;
+	height:70px;
+	text-align:center;
+	line-height: 70px;
+	font-size: 15px;
+	color:white;
+	background-color: rgba(242,272,123,0.9);
+	border:10px solid rgba(255,253,252,0.6);
+	border-radius: 50%;
+	
+
+}
+
+.five:after{
+	content: "React.js";
+	position: absolute;
+	margin-left:595px;
+	margin-top:200px;
+	width:70px;
+	height:70px;
+	text-align:center;
+	line-height: 70px;
+	font-size: 15px;
+	color:white;
+	background-color: rgba(255,128,153,0.9);
+	border:10px solid rgba(255,253,252,0.6);
+	border-radius: 50%;
+	
+
+}
+
+.Zepto{
+	position: absolute;
+	width:80px;
+	height:80px;
+	margin-left:150px;
+	margin-top:575px;
+	text-align:center;
+	line-height: 80px;
+	font-size: 15px;
+	color:white;
+	background-color: rgba(255,128,153,0.7);
+	border:10px solid rgba(255,253,252,0.6);
+	border-radius: 50%;
+	
+
+}
+
+.WebApp{
+	position: absolute;
+	width:100px;
+	height:100px;
+	margin-left:-60px;
+	margin-top:250px;
+	text-align:center;
+	line-height: 100px;
+	font-size: 15px;
+	color:white;
+	background-color: rgba(126,198,208,0.7);
+	border:10px solid rgba(255,253,252,0.6);
+	border-radius: 50%;
+	
+}
+
+.Augular{
+	position: absolute;
+	width:90px;
+	height:90px;
+	margin-left:400px;
+	margin-top:-30px;
+	text-align:center;
+	line-height: 90px;
+	font-size: 15px;
+	color:white;
+	background-color: rgba(238,57,142,0.7);
+	border:10px solid rgba(255,253,252,0.6);
+	border-radius: 50%;
+	
+
+}
+
+
+@keyframes roll{
+        0%{
+        transform:  translate(0,0) rotate(360deg);
+        }
+        100%{
+        transform:  translate(0,0) rotate(0deg);
+        }
+}
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+<div class="box">
+<div class="wed">Web</div>
+<div class="jsandjq"></div>
+<div class="htmlandcss"></div>
+<div class="five">
+<div class="Zepto">Zepto.js</div>
+<div class="WebApp">WebApp</div>
+<div class="Augular">Augular.js</div>
+<div class="WebApp">WebApp</div>
+<div class="Augular">Augular.js</div>
+</div>
+</div>
+	
+</body>
+
+
+</html>
