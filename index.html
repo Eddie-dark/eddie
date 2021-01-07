@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>建党99周年</title>
+	<link rel="shortcut icon" href="images/dh.ico">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/style.css" style="text/css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+        .max{
+            height: 100%;
+            width: 100%;
+            background-color: #faefb4;
+        }
+        .menu{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .mainNav{
+            height: 80px;
+            display: block;
+            background-color: #a00e14;
+        }
+
+        .laymid{
+            width: 1500px;
+            margin: 0 auto;
+        }
+
+        .menu-logo{
+            display: block;
+            width: 218px;
+            position: relative;
+            left: 0;
+            top: 20px;
+            float: left;
+            height: 60px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-image: url(images/tam.png);
+        }
+        .menu-logo-dh{
+            display: block;
+            width: 60px;
+            position: relative;
+            right: 50px;
+            top: 10px;
+            float: right;
+            height: 62px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-image: url(images/dh.png);
+        }
+
+        ul,li{
+            list-style: none;
+        }
+
+        .mainMenu{
+            height: 80px;
+            margin-left: 420px;
+        }
+        .channel{
+            float: left;
+            height: 80px;
+            line-height: 80px;
+            position: relative;
+        }
+        a.channel-a:hover, .mainMenu .on .channel-a{
+                color: yellow;
+        }
+
+        .channel .channel-a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: block;
+        }
+        a.channel-a{
+            padding: 0 60px;
+        }
+        .hasleftline{
+            padding-left: 20px;
+            margin-left: 20px;
+        }
+        .hasleftline:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 32px;
+            left: 0;
+            width: 1px;
+            height: 16px;
+            background: white;
+        }
+        
+
+        span{
+            text-decoration: none;
+            text-align: center;
+            color: #ffffff;
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            margin-left: -15px;
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .iconfont{
+            font-size: 20px;
+        }
+
+        .content{
+            width: 1400px;
+            height: 12800px;
+            margin: 0 auto;
+            font-size:16px;
+            line-height: 80px;
+            margin-top:90px;
+            border :solid 3px purple;
+            background-color: white;
+        }
+        video{
+            margin-left:-600px;
+            width: 1200px;
+            height: 700px;
+            position: absolute;
+
+        }
+        .shipin{
+            width: 1390px;
+            height: 700px;
+            margin-top: 120px;
+            
+        }
+
+        h1{
+            line-height: 150px;
+            font-weight:600;
+            font-size:41px;
+            margin-bottom:0px;
+            cursor:pointer;
+            background-image:-webkit-linear-gradient(top,red,#ff5f60,#f0c41b); 
+            -webkit-background-clip:text; 
+            -webkit-text-fill-color:transparent;
+            border-bottom: 5px solid red;
+        }
+        h1{
+            clear:both;
+        }
+
+        h2{
+            line-height: 100px;
+            font-weight:600;
+            font-size:21px;
+            margin-bottom:0px;
+            cursor:pointer;
+            background-image:-webkit-linear-gradient(bottom,white,#07398d,pink); 
+            -webkit-background-clip:text; 
+            -webkit-text-fill-color:transparent;
+
+        }
+        p{
+            margin-top:10px;
+            line-height: 50px;
+            font-size: 18px;
+            text-align: left;
+            font-weight:bold;
+        }
+        .qingzhu{
+            width: 500px;
+            height: 550px;
+            margin-left: 355px;
+            margin-top:50px;
+        }
+
+        .qingzhu2{
+            width: 500px;
+            height: 500px;
+            margin-top:0px;
+        }
+        .dhlogo{
+            width: 71px;
+            height: 76px;
+            margin-left:630px;
+            margin-top:30px;
+        }
+        .tiananmen{
+            width: 650px;
+            height: 800px;
+            margin-left: 180px;
+            margin-top:20px;
+        }
+        .dangqi{
+            width: 650px;
+            height: 500px;
+            margin-left: 305px;
+            margin-top:20px;
+        }
+        .gcdxy{
+            width: 450px;
+            height: 550px;
+            margin-left: 465px;
+            margin-top:20px;
+        }
+
+        .kongbai{
+            width: 900px;
+            height: 200px;
+            margin-left: 240px;
+            margin-top:20px;
+
+        }
+        .zhishi{
+            width: 900px;
+            height: 2300px;
+            margin-left: 240px;
+            margin-top:20px;
+
+        }
+        .people{
+            width: 1390px;
+            height: 400px;
+        }
+
+        .famous{
+            position: relative;
+            float: left;
+            display:block;
+            width: 234px;
+            height: 300px;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.5s ;
+            border: 0px solid;
+            margin-top: 50px;
+            margin-left: 35px;
+            background-color: white;
+        }
+
+        .famous:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 0 10px 10px pink;
+        }
+
+        .pic{
+            width: 250px;
+            height: 250px;
+            margin-top: 0px;
+            margin-bottom: 25px;
+            margin-left: -10px;
+        }
+
+
+        .desc{
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            bottom: -100px;
+            font-size: 24px;
+            line-height:100px;
+            background-color: #ff6700;
+            color:white;
+            transition: all 0.5s;
+        }
+
+        .famous:hover .desc{
+            bottom: 0px;
+        }
+
+		
+
+
+
+	</style>
+</head>
+<script>
+$(function() {
+    //第五步：利用ID在JS中启用轮播图，可以设置三个参数interval（轮播切换时间）、pause（默认hover即鼠标悬停时停止播放）、wrap（默认true，持续循环）
+    $('#myCarousel').carousel({
+        interval: 3000,
+    });
+
+    var imgHeight = $('.carousel-inner img').height();
+    //设置垂直居中
+    $('.carousel-control').css('line-height', imgHeight + 'px');
+
+    //设置窗口变化时自动响应垂直居中
+    $(window).resize(function() {
+        var height = $('.carousel-inner img').eq(0).height() || $('.carousel-inner img').eq(1).height() || $('.carousel-inner img').eq(2).height();
+        $('.carousel-control').css('line-height', height + 'px');
+    });
+    //$('#myModal').modal();
+
+});
+</script>
+<body class="max">
+
+    <div class="menu">
+	  <div class="mainNav">
+        <div class="laymid">
+          <div class="menu-logo"></div>
+          <div class="menu-logo-dh"></div>
+            <div class="mainMenu">
+               <ur>
+                      <li class="channel on"><a class="channel-a" href="index.html">建党99周年</a></li>
+                      <li id="channel-cfzx" class="channel"><a class="channel-a" href="about.html">作品说明</a></li>
+                      <li id="channel-sjzx" class="channel hasleftline"><a class="channel-a" href="message.html">信息收集</a></li>
+                      
+
+                  </ur>   
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+ <div id="myCarousel" class="carousel slide">
+        <!--第一步：设计轮播图片的容器,用ID和css同时确定。-->
+        <ol class="carousel-indicators">
+            <!--第二步：设计轮播图片计数器。-->
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1">
+            </li>
+            <li data-target="#myCarousel" data-slide-to="2">
+            </li>
+        </ol>
+        <div class="carousel-inner">
+            <!--第三步：设计轮播图片播放区,使用 carousel-inner 样式来控制-->
+            <div class="item active"><img src="images/banner1.jpg" alt="99周年"></div>
+            <div class="item"><img src="images/banner2.jpg" alt="毛泽东 ">
+            </div>
+            <div class="item"><img src="images/banner3.jpg" alt=天安门 "></div>
+        </div>
+        <!--第四步：设计轮播图片控制器。向前播放 carousel-control left和向后播放的控制器-->
+        <a href="#myCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+        <a href="#myCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>
+    </div>
+    <!-- /banner -->
+    <!-- <div class="content"> -->
+        <div class="shipin">
+        <h1>党的历程</h1>
+	        <video  autoplay loop muted="true">
+		        <source src="media/99shipin.mp4" type="video/mp4">
+	        </video>
+        </div><br>
+        <h1>前言</h1>
+        <div class="qingzhu" >
+            <img src="images/qingzhu.jpg" alt="" title="" width="700x" height="350px">
+        <p>2020年是建党99周年，让我们一起了解一下吧</p>
+        </div>
+        
+        <h1>喜迎建党节</h1>
+            
+        <div class="qingzhu2">
+            <img src="images/qingzhu2.jpg" alt="" title="" width="1100px" height="px">
+        </div>
+            <div class="kongbai"><p>中国共产党成立纪念日，每年公历七月一日。中国共产党走过了许多年的风风雨雨，每年7月1日是建党节，各地都会举行不同的活动来缅怀先烈。以共产主义为目的，以马列主义为行动指南，统一工人阶级政党。中国共产党的诞生，开辟了中国历史发展的新时代。</p></div>
+
+        <div class="dhlogo">
+            <img src="images/dhlogo.png" alt="" title="" width="71px" height="76px">
+        </div>
+            <div class="kongbai"><p>作为社会主义接班人，我们本应该深入了解国家的历史发展和那些具有纪念性的节日的内涵，但好像随着社会的发展，我们更容易遗忘那些离我们越来越远的历史，在7月1日建党节这个值得纪念的日子，为大家深入普及一下有关于建党节那些事。</p></div>
+
+
+        <h2>建党节的由来</h2>
+        <div class="tiananmen">
+            <img src="images/tiananmen.jpg" alt="" title="" width="px" height="px">
+        </div>
+            <div class="kongbai"><p>抗日战争时期，由于环境困难，不能查记“一大”召开的准确日期。因此1941年党中央决定召开“四大”，确定1921年7月的首日作为党的生日和纪念日。</p>
+            
+            <p>大会通过了党的章程，选举陈独秀为总书记，宣告中国共产党成立。从此，在中国出现了完全新式的以共产主义为目的，以马列主义为行动指南的，统一的工人阶级政党。中国共产党的诞生，开辟了中国历史发展的新时代，是中国革命的面貌焕然一新。</p></div>
+
+
+        <h2>党旗</h2>
+        <div class="dangqi">
+            <img src="images/dangqi.jpg" alt="" title="党旗" width="800px" height="400px">
+        </div>
+        <div class="kongbai"><p>中国共产党的党旗是中国共产党的象征和标志。旗面为红色，缀有金黄色党徽图案。红色象征革命，黄色的锤子（榔头）、镰刀代表工人和农民的劳动工具，象征着中国共产党是中国工人阶级的先锋队，代表着工人阶级和广大人民群众的根本利益。</p></div>
+
+
+        <h2>共产党宣言</h2>
+        <div class="gcdxy">
+            <img src="images/gcdxy.jpg" alt="" title="共产党宣言" width="px" height="500px">
+        </div>
+        <div class="kongbai"><p>宣言第一次全面系统地阐述了科学社会主义理论，指出共产主义运动将成为不可抗拒的历史潮流。</p></div>
+
+        <h1>小知识</h1>
+
+        <div class="zhishi"><h2>“中国共产党”名称的由来</h2>
+        <p>1920年8月，陈独秀在上海发起成立了中国共产党的第一个早期组织。1920年9月1日，陈独秀在《新青年》发表的《对于时局之我见》一文中，曾称“吾党”为“社会党”，后来才改称为“共产党”。</p>
+        <br>
+        <p>最早提出“中国共产党”这一名称的是蔡和森。1920年8月13日和9月16日，正在留法勤工俭学的他，在给毛泽东写的两封信中，详细地研讨了共产党问题，提出：“先要组织党——共产党，因为它是革命运动的发动者、宣传者、先锋队、作战部。”</p>
+        <br>
+        <p>他在对西欧各国共产党特别是俄国共产党考察的基础上，提出了具体的建党步骤，其中包括“明目张胆正式成立一个中国共产党”。</p>
+        <br>
+        <p>在此前后，陈独秀在上海，李大钊、张申府在北京也通过信函讨论了党的名称问题，决定采用“共产党”作为中国无产阶级政党的名称。</p>
+
+        <h2>党的组织系统</h2>
+        <p>党中央组织<br>就是大家熟悉的5年一次的党的全国代表大会，这是党内最高权力机关，由它选举出党的中央委员会和纪律检查委员会。中央委员会选举中央常务委员会、中央政治局和中央委员会总书记。</p>
+        <br>
+        <p>党地方组织<br>就是各省市自治区的党员代表大会，由他们选举同级党委会和纪委。跟中央的程序一样，党委会选举地方常委会、书记、副书记等等，报党中央批准。</p>
+        <br>
+        <p>党基层组织<br>就是大家在企业、机关、学校等地方随处可见的党支部、党总支。按照党章规定，只要有正式党员3人以上，就有必要建立党的基层组织。党支部、党总支的领导层，也是要经过选举后报上级党组织批准的。</p>
+        <br>
+        <br>
+        <h2>党的建设必须坚决实现四项基本要求</h2>
+        <p>第一，坚持党的基本路线。</p>
+        <p>第二，坚持解放思想，实事求是，与时俱进。</p>
+        <p>第三，坚持全心全意为人民服务。</p>
+        <p>第四，坚持民主集中制。</p>
+        <br></div>
+
+        <h1>你知道他们吗</h1>
+
+        <div class="people">
+        <!-- <div class="famous">
+            <img src="./images/cdx.jpg" alt="">
+        </div> -->
+        <div class="famous">
+            <div class="pic">
+                <img src="./images/cdx.jpg" alt="">
+            </div>
+            <div class="desc">陈独秀</div>
+        </div>
+        <div class="famous">
+            <div class="pic">
+                <img src="./images/ldz.jpg" alt="">
+            </div>
+            <div class="desc">李大钊</div>
+        </div>
+        <div class="famous">
+            <div class="pic">
+                <img src="./images/chs.jpg" alt="">
+            </div>
+            <div class="desc">蔡和森</div>
+        </div>
+        <div class="famous">
+            <div class="pic">
+                <img src="./images/ld.jpg" alt="">
+            </div>
+            <div class="desc">李达</div>
+        </div>
+        <div class="famous">
+            <div class="pic">
+                <img src="./images/zgt.jpg" alt="">
+            </div>
+            <div class="desc">张国焘</div>
+        </div>
+    </div>
+        <h2>陈独秀</h2>
+        <div class="kongbai"><p>陈独秀（1879年10月9日-1942年5月27日），原名陈庆同，陈乾生，字仲甫，号实庵，安徽怀宁人，新文化运动的倡导者、发起者和主要旗手，“五四运动的总司令”，中国共产党的主要创始人之一和党早期主要领导人。陈独秀1920年初前往上海成立共产党早期组织，并发起成立中国共产党。1921年7月在中国共产党第一次全国代表大会上被选为中央局书记，后任中央局执行委员会委员长（中共二大、中共三大）、中央总书记（中共四大、中共五大）等职务，并任第一至五届中央委员。</p></div>
+        <h2>李大钊</h2>
+        <div class="kongbai"><p>李大钊（1889年10月29日-1927年4月28日），字守常，河北乐亭人。李大钊同志是中国共产主义的先驱，伟大的马克思主义者、杰出的无产阶级革命家、中国共产党的主要创始人之一，他不仅是我党早期卓越的领导人，而且是学识渊博、勇于开拓的著名学者，在中国共产主义运动和民族解放事业中，占有崇高的历史地位。</p></div>
+        <h2>蔡和森</h2>
+        <div class="kongbai"><p>蔡和森（1895年3月30日—1931年8月4日），字润寰，号泽膺，原籍湖南省湘乡县永丰镇(今属双峰县)。中国共产党早期的重要领导人，杰出的共产主义战士，无产阶级革命家、理论家和宣传家。蔡和森同志是中共第二、三、四、五、六届中央委员，第三、四届中央局委员，第五、六届中央政治局委员、常委，担任过中共中央代理秘书长、中共中央宣传部部长、中共两广省委书记。</p></div>
+        <h2>李达</h2>
+        <div class="kongbai"><p>李达（1890年10月2日-1966年8月24日），名庭芳，字永锡，号鹤鸣，湖南省永州市零陵人 [1]  。杰出的马克思主义理论家、宣传家和教育家，中国共产党的主要创建者和早期领导人之一。1920年，李达从日本留学归国，随即与陈独秀、李汉俊等人组建中国共产党上海发起组，筹备和组织中国共产党第一次全国代表大会，并在“一大”上当选为中央局宣传主任。</p></div>
+        <h2>张国焘</h2>
+        <div class="kongbai"><p>张国焘（1897年11月26日-1979年12月3日），又名特立，江西萍乡人 ，中国共产党创始人之一、五四运动的学生领袖、中共建党初期的高级领导人。1916年，张国焘进入北京大学读书，五四运动中表现积极。1920年10月，创建北京的共产党早期组织。1932年进入鄂豫皖苏区，成为根据地事实上的领导者。</p></div>
+
+
+
+        <h1>我们怎么做</h1>
+            
+        <div class="kongbai"><h2>有理想</h2><p>作为新时代的青年，有远大的理想是非常重要的，只有有了远大的理想，我们才会为了这个理想去付诸实践，从而为祖国和社会做出贡献，贡献出自己的一份力量。</p>
+        <h2>努力提高自身素养</h2><p>作为新时代的青年，提高自身的素质是非常重要的，在生活中，要加强自身修养，关注身边的小事情，从点点滴滴做起，努力提高自身的修养。</p>
+        <h2>调整心态摆正位置</h2><p>在生活和工作学习中要调整好自己的心态，不要被一些负面的东西所影响到，要学会通过一些正面的、积极的东西来调整自己的心态，从而使自己能够更好的发展。</p>
+        <h2>有能吃苦的精神</h2><p>这是一种非常重要的心情，新时代的青年应该具备这种精神，结合我们所学的专业知识，将之运用到实践之中。</p>
+        <h2>有责任感</h2><p>有责任感也是非常重要的，在生活中，很多人只是关心自己的事情，并不去理会别人的事情，这是一种非常没有责任感的表现，作为新时代的青年，有责任感是非常重要的。</p>
+        <h2>树立终身学习的观念</h2><p>很多人觉得自己大学毕业出来就可以开始工作哦，就不用在去学习了，这其实是一种错误的观念，社会在发展，时代在进步，我们需要通过不断的学习来适应社会，提高自己的素养。</p>
+        </div>
+        
+    </div>
+
+    <!-- <a href="famous.html">
+        <span class="iconfont icon-down"></span>
+    </a> -->
+	
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+</body>
+
+<script>
+$(function() {
+    //第五步：利用ID在JS中启用轮播图，可以设置三个参数interval（轮播切换时间）、pause（默认hover即鼠标悬停时停止播放）、wrap（默认true，持续循环）
+    $('#myCarousel').carousel({
+        interval: 3000,
+    });
+
+    var imgHeight = $('.carousel-inner img').height();
+    //设置垂直居中
+    $('.carousel-control').css('line-height', imgHeight + 'px');
+
+    //设置窗口变化时自动响应垂直居中
+    $(window).resize(function() {
+        var height = $('.carousel-inner img').eq(0).height() || $('.carousel-inner img').eq(1).height() || $('.carousel-inner img').eq(2).height();
+        $('.carousel-control').css('line-height', height + 'px');
+    });
+    //$('#myModal').modal();
+
+});
+</script>           
+</html>
