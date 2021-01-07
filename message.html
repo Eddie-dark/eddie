@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>信息收集</title>
+    <link rel="shortcut icon" href="images/dh.ico">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/style.css" style="text/css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .max{
+            height: 100%;
+            width: 100%;
+            background-color: #faefb4;
+        }
+        .menu{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .mainNav{
+            height: 80px;
+            display: block;
+            background-color: #a00e14;
+        }
+
+        .laymid{
+            width: 1500px;
+            margin: 0 auto;
+        }
+
+        .menu-logo{
+            display: block;
+            width: 218px;
+            position: relative;
+            left: 0;
+            top: 20px;
+            float: left;
+            height: 60px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-image: url(images/tam.png);
+        }
+        .menu-logo-dh{
+            display: block;
+            width: 60px;
+            position: relative;
+            right: 50px;
+            top: 10px;
+            float: right;
+            height: 62px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-image: url(images/dh.png);
+        }
+
+        ul,li{
+            list-style: none;
+        }
+
+        .mainMenu{
+            height: 80px;
+            margin-left: 420px;
+        }
+        .channel{
+            float: left;
+            height: 80px;
+            line-height: 80px;
+            position: relative;
+        }
+        a.channel-a:hover, .mainMenu .on .channel-a{
+                color: yellow;
+        }
+
+        .channel .channel-a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: block;
+        }
+        a.channel-a{
+            padding: 0 60px;
+        }
+        .hasleftline{
+            padding-left: 20px;
+            margin-left: 20px;
+        }
+        .hasleftline:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 32px;
+            left: 0;
+            width: 1px;
+            height: 16px;
+            background: white;
+        }
+        
+
+        span{
+            text-decoration: none;
+            text-align: center;
+            color: #ffffff;
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            margin-left: -15px;
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .iconfont{
+            font-size: 20px;
+        }
+
+        .content{
+            width: 1400px;
+            height: 750px;
+            margin: 0 auto;
+            font-size:16px;
+            line-height: 80px;
+            margin-top:120px;
+            border :solid 3px purple;
+            background-color: white;
+        }
+        
+        h1{
+            font-weight:600;
+            text-align: left;
+            font-size:41px;
+            color:#07398d;
+            line-height: 100px;
+            border-bottom: 10px solid #00338e;
+        }
+        h1{
+            clear:both;
+        }
+
+        p{
+            margin-top:5px;
+            margin-left: 120px;
+            line-height: 10px;
+            font-size: 16px;
+            text-align: left;
+            font-weight:bold;
+        }
+
+        input[type='text'],input[type='number'],input[type='date']{
+            border-bottom:1px solid #ddd;
+            height: 30px;
+        }
+        input[type='submit'],input[type='reset']{
+            background-color: #ff4400;
+            height: 25px;
+            width: 50px;
+            color: white;
+        }
+        .kuang{
+            width: 700px;
+            height: 550px;
+            float: left;
+            margin-top:50px;
+            margin-left: 350px;
+        }
+
+        
+        
+
+        
+
+
+
+    </style>
+</head>
+
+<body class="max">
+
+    <div class="menu">
+      <div class="mainNav">
+        <div class="laymid">
+          <div class="menu-logo"></div>
+          <div class="menu-logo-dh"></div>
+            <div class="mainMenu">
+               <ur>
+                      <li class="channel on"><a class="channel-a" href="index.html">建党99周年</a></li>
+                      <li id="channel-cfzx" class="channel"><a class="channel-a" href="about.html">作品说明</a></li>
+                      <li id="channel-sjzx" class="channel hasleftline"><a class="channel-a" href="message.html">信息收集</a></li>
+                      
+
+                  </ur>   
+            </div>
+        </div>
+      </div>
+    </div>
+<div class="content">
+        <h1 align=center>信息收集</h1>
+
+        <div class="kuang">
+    <form method="post" >
+
+        <p>姓<!-- &nbsp;&nbsp;&nbsp;&nbsp; -->名：
+        <input type="text" id="text" required="required" class=text autocomplete="off" size="12" maxlength="10" name="" style="width:180px; height: 30px" />
+        </p>
+
+        <p>性&nbsp;&nbsp;&nbsp;&nbsp;别：
+        <input type="radio" name="1" value="" />男
+        <input type="radio" name="1" value="" />女
+        </p>
+        <p>年&nbsp;&nbsp;&nbsp;&nbsp;龄：
+        <input type="text" id="text" required="required" autocomplete="off" name="age" style="width:180px; height: 30px" />
+        </p>
+        <p>联系电话：
+        <input type="text" id="text" required="required" autocomplete="off" maxlength="11"name="phone" style="width:180px; height: 30px"/>
+        </p>
+        <p>电子邮件：
+        <input type="email" id="text" required="required" autocomplete="off" style="width:180px; height: 30px"/>
+
+        职业：
+        <select style="width:100px; height: 30px">
+            <option>学生</option>
+            <option>公务员</option>
+            <option>老师</option>
+            <option>其他</option>
+        </select>
+        <br><br>
+        <p>
+        建党99周年你的感想：<br>
+        <br><br>
+        <textarea name="yourworks" cols ="50" rows = "20"></textarea></p>
+        <p><input type="submit" name="submit" value="提交"/>
+        <input type="reset" name="reset" value="清除" />
+        </p>
+    </form>
+        </div>
+    </div>
+
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+
+</body>
+
+<script>
+    // 这里设置验证表单时自定义的错误文本提示内容
+    var text = document.getElementById('title');
+    var text = document.getElementById('text');
+    var text = document.getElementById('date');
+    title.oninvalid=function(){
+        var v = text.validity;
+                  conole.log(v);
+        if(true === v.valueMissing){
+                this.setCustomValidity("投票标题不能为空");
+        }
+        else{
+                this.setCustomValidity("");
+
+        }
+
+}
+    text.oninvalid=function(){
+        var v = text.validity;
+                  conole.log(v);
+        if(true === v.valueMissing){
+                this.setCustomValidity("投票标题不能为空");
+        }
+        else{
+                this.setCustomValidity("");
+
+        }
+
+}
+    date.oninvalid=function(){
+        var v = text.validity;
+                  conole.log(v);
+        if(true === v.valueMissing){
+                this.setCustomValidity("投票标题不能为空");
+        }
+        else{
+                this.setCustomValidity("");
+
+        }
+
+
+
+</script>
+
+
+          
+</html>
