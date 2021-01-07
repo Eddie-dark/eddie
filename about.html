@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作品说明</title>
+	<link rel="shortcut icon" href="images/dh.ico">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/style.css" style="text/css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+        .max{
+            height: 100%;
+            width: 100%;
+            background-color: #faefb4;
+        }
+        .menu{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 999;
+        }
+
+        .mainNav{
+            height: 80px;
+            display: block;
+            background-color: #a00e14;
+        }
+
+        .laymid{
+            width: 1500px;
+            margin: 0 auto;
+        }
+
+        .menu-logo{
+            display: block;
+            width: 218px;
+            position: relative;
+            left: 0;
+            top: 20px;
+            float: left;
+            height: 60px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-image: url(images/tam.png);
+        }
+        .menu-logo-dh{
+            display: block;
+            width: 60px;
+            position: relative;
+            right: 50px;
+            top: 10px;
+            float: right;
+            height: 62px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-image: url(images/dh.png);
+        }
+
+        ul,li{
+            list-style: none;
+        }
+
+        .mainMenu{
+            height: 80px;
+            margin-left: 420px;
+        }
+        .channel{
+            float: left;
+            height: 80px;
+            line-height: 80px;
+            position: relative;
+        }
+        a.channel-a:hover, .mainMenu .on .channel-a{
+                color: yellow;
+        }
+
+        .channel .channel-a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            display: block;
+        }
+        a.channel-a{
+            padding: 0 60px;
+        }
+        .hasleftline{
+            padding-left: 20px;
+            margin-left: 20px;
+        }
+        .hasleftline:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 32px;
+            left: 0;
+            width: 1px;
+            height: 16px;
+            background: white;
+        }
+        
+
+        span{
+            text-decoration: none;
+            text-align: center;
+            color: #ffffff;
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            margin-left: -15px;
+            display: block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .iconfont{
+            font-size: 20px;
+        }
+
+        .content{
+            width: 1400px;
+            height: 2800px;
+            margin: 0 auto;
+            font-size:16px;
+            line-height: 80px;
+            margin-top:90px;
+            border :solid 3px purple;
+            background-color: white;
+        }
+        
+        h1{
+            font-weight:600;
+            text-align: left;
+            font-size:41px;
+            color:#07398d;
+            line-height: 100px;
+            border-bottom: 10px solid #00338e;
+        }
+        h1{
+            clear:both;
+        }
+
+        h2{
+            margin-top: 50px;
+            font-size:21px;
+            color:#07398d;
+            line-height: 20px;
+            text-indent: 2em;
+            text-align: center;
+
+        }
+        h3{
+            font-size:20px;
+            color:#07398d;
+            line-height: 20px;
+            text-indent: 2em;
+            text-align: center;
+
+        }
+        p{
+            margin-top:10px;
+            margin-left: 150px;
+            line-height: 50px;
+            font-size: 18px;
+            text-align: left;
+            font-weight:bold;
+        }
+        
+        
+
+		
+
+
+
+	</style>
+</head>
+
+<body class="max">
+
+    <div class="menu">
+	  <div class="mainNav">
+        <div class="laymid">
+          <div class="menu-logo"></div>
+          <div class="menu-logo-dh"></div>
+            <div class="mainMenu">
+               <ur>
+                      <li class="channel on"><a class="channel-a" href="index.html">建党99周年</a></li>
+                      <li id="channel-cfzx" class="channel"><a class="channel-a" href="about.html">作品说明</a></li>
+                      <li id="channel-sjzx" class="channel hasleftline"><a class="channel-a" href="message.html">信息收集</a></li>
+                      
+
+                  </ur>   
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+        
+        <h1>页面特点</h1>
+
+        <h2>导航栏</h2>
+        <p>导航栏背景色为红色，主要展示了红色经典。同时导航栏处插入了天安门和党徽的图片，天安门在左边，党徽在右边，网页内容在两者之间，使得导航条更加美观同时使得主题更加突出。三个页面的基础色为white，在红色的导航条内更加显眼，以及三个网页的hover色为yellow。</p>
+        <h2>内容</h2><br>
+
+        <h3>index.html</h3>
+        <p>首先是轮播图区块,轮播三张图片,都是与中国共产党有关的图片,丰富了页面</p>
+        <p>背景色采用两个盒子,外盒子颜色为浅黄,内部content盒子为白色,加之紫色的边框线,突出中心内容</p>
+        <p>轮播图下面则是党的历程,主要是以循环播放的视频作为内容,视频内十分清楚的讲述了中国共产党的一些进程,最后点明中国共产党建立99周年,突出了主题</p>
+        <p>再往下走则是前言部分,前言主要讲了网页的主题"建党99周年"并引出下面的内容。前言后面紧接的是喜迎建党节,主要介绍了中国共产党成立的日子,建党节的由来以及党旗跟共产党宣言,除了文字说明之外还配有相应的图片,使得浏览不乏味无趣</p>
+        <p>往下就是小知识板块,给网页浏览者介绍了中国共产党名称的由来;党的组织系统以及党的建设必须坚决实现的四项基本要求,紧贴建党99周年的主题并帮助浏览者了解更多关于党的知识</p>
+        <p>介绍完党的知识,就介绍党的名人,采用动画边框等样式,展示了五位中国共产党的领导人,并采取文字介绍的方式帮助浏览者更好的了解他们,始终围绕建党99周年的主题</p>
+        <p>最后,在建党99周年的背景下,升华一下主题,引出我们新时代青年应该怎么做,那就是要有理想、有责任感、调整心态摆正位置、有能吃苦的精神、树立终身学习的观念。</p>
+
+        <h3>about.html</h3>
+        <p>主要采用简单的下划线,以及与白色背景反差大的标题颜色,突出内容</p>
+        <p>主要为两个板块,上面板块为页面特点介绍,下板块为课程心得体会</p>
+        <p>背景色采用两个盒子,外盒子颜色为浅黄,内部content盒子为白色,加之紫色的边框线,突出中心内容</p>
+
+        <h3>message.html</h3>
+        <p>主要采用简单的下划线,以及与白色背景反差大的标题颜色,突出内容</p>
+        <p>背景色采用两个盒子,外盒子颜色为浅黄,内部content盒子为白色,加之紫色的边框线,突出中心内容</p>
+        <p>主要为中心展示，内容包括姓名输入框属性为text、性别输入框采用radio、联系电话属性为text，限制字数为11位、邮件输入框则位email、职业则是下拉框和、感想处则是一个文本区域用于写感想，最后就是提交按钮和清除按钮，表单设置了表单验证，提交需将上述相关内容填写完才能提交，否则无法进行提交。</p>
+
+
+        
+        <h1>课程心得</h1>
+        <h2>体会</h2>
+        <p>不知不觉一个学期又过去了，网页设计这门课程一学期下来也有蛮多心得体会的。还记得大一的时候刚接触到这门学科，是那样的陌生又有点好奇，以至于后面选课的时候选择了这个方向。这一个学期下来，我发现网页设计有乏味也有开心，当你面对作业毫无头绪，不知所措的时候，你会觉得乏味且崩溃。但当你钻研做出的时候，你也会有满足感，虽然做的仍然不怎么样，但那是你苦苦钻研出来的，是付出之后的喜悦。这一学期下来，我觉得CSS边框圆角、渐变、过渡、转换、动画都是比较重要的，而且也是相对来说有难度的，跟大一不同，你需要更加努力，更加需要时间去钻研，老师课上讲的东西是不够的，每个人都应在课余时间往更深层次的去学，这样才有可能进步。</p>
+        <h2>心得</h2>
+        <p>首先，网页设计要有一个明确的主题，整个网页都是围绕这一个主题，也就是我们在网页设计之前要明确之间的网页有什么目的，用来做什么，所有网页都是围绕一个内容来制作。用户是网页设计成败的关键，我们要想办法将网页设计成符合大众口味的，操作以及美观程度都要有所涉及，这样才能使用户有想继续浏览的欲望。</p>
+        <p>接着就是网站的内容，我们可以查阅相关网站内容学习借鉴，在网络上将相关需要的内容进行收集整理，变成自己想要的东西，之后丰富自己的网页。</p>
+        <p>最后就是网页的优化工作了，要充分考虑好网页的合理性，代码的可读性，以及各个页面之间的连接性。</p>
+        <p>总的来说，网页设计这门课，有迷茫也有收获，但是已经迈入了这门课程，之后就需要下多点功夫，在课余时间多钻研，多问会的同学或者问老师，不断提高知识储备，才能让网页设计成为自己的一项技能。</p>
+
+
+        
+    </div>
+
+	
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js "></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js "></script>
+</body>
+          
+</html>
